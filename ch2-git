@@ -1,0 +1,24 @@
+# GIT
+## intro
+Learned about the basics commands in git.
+1. **git config**: Used to setup the configuration variables such as user.name and user.email.
+
+2. **git init**: This one is used to setup tracking of the folder/file. 
+
+3. **git status**: This one will list the untracked and staged files.
+
+4. **git add** : Used to stage files.
+
+5. **git commit -m** : Used to commit the staged changes
+
+6. **git log:** lists details of all commits
+
+7. **git branch:** Lists all branches and also used to make new branches.
+
+8. **git checkout:** This one's used to literally checkout earlier commits as well as branch heads. This is done using commit hash or branch name.
+
+9. **git diff:** shows the changes made to files.
+
+10. **git remote add origin SSH_URL**
+
+11. **git push -u origin branch_name**
