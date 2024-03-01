@@ -1,24 +1,24 @@
 # GIT
 ## intro
 Learned about the basics commands in git.
-1. **git config**: Used to setup the configuration variables such as user.name and user.email.
+1. **git config --global**: Used to setup the configuration variables such as *user.name* and *user.email*. This is rarely used.
 
-2. **git init**: This one is used to setup tracking of the folder/file. 
+2. **git init**: This one is used to setup tracking of the folder/file. This is used once in a particular folder.
 
-3. **git status**: This one will list the untracked and staged files.
+3. **git status**: This one will list the untracked and staged files and shows modified files. It also mentions the branch inwhich we are working.
 
-4. **git add** : Used to stage files.
+4. **git add** : Used to stage files. Git will remember these staged files for next commitment.
 
-5. **git commit -m** : Used to commit the staged changes
+5. **git commit -m** : Used to commit the staged changes. It requires a commit message.
 
-6. **git log:** lists details of all commits
+6. **git log:** lists details of all commits in the current branch.
 
-7. **git branch:** Lists all branches and also used to make new branches.
+7. **git branch:** Lists all branches and is  also used to make new branches.
 
-8. **git checkout:** This one's used to literally checkout earlier commits as well as branch heads. This is done using commit hash or branch name.
+8. **git checkout:** This one's used to literally checkout earlier commits as well as switch branch heads. This is done using commit hash/branch name.
 
 9. **git diff:** shows the changes made to files.
 
-10. **git remote add origin SSH_URL**
+10. **git remote add origin SSH_URL**: Used to link local repo with remote repository on Github
 
-11. **git push -u origin branch_name**
+11. **git push -u origin branch_name**: Used to push the current state of local repo into remote repo.
