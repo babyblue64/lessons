@@ -1,0 +1,33 @@
+Chapter 1 - the basics
+
+the global object:
+First, understand what a window object is. It represents everything in an open window. It comes with methods and useful stuff.
+In node, the window object is the global object. Use setTimeout() to call a function once at some point in time. Use setInterval() to call 
+a function at regular intervals. Fetch its id and use clearInterval() to stop execution.    
+
+Modular programming:
+hi there, i am going to learn about importing modules and creating as well as managing them. splitting the code into different modules 
+makes it easier to maintain them instead of dumping all of our code into a single file.
+
+importing a file into another can be done using a 'require()' statement. exporting something can be done using 'module.exports='. 
+If i create a file and i decide to export something i just write module.exports=that something. Then if i want that something in 
+another file, i simply use require(). 
+
+modular programming: refers to separating the functionality of a program into independent modules.
+
+So, require is going to first run the file and then return any exported objects
+
+Destructuring: Using curly braces to extract exactly the object that you need.
+
+Now lets talk about some cool modules: OS is one of them. Another important one is the file system.
+
+File System module(fs module):
+you start off by requiring the fs module. To read a file, use fs.readFile(), which takes in two 
+arguments: relative path of the target file and a callback function. Remember: these methods are 
+asynchronous, i.e. js  doesn't wait around for the file-reading to complete. The callback function
+takes in two arguments: err and data. In the function, you must check for any error, after which 
+you send the data to the console.
+
+Do the same for fs.writeFile() and fs.mkdir(), fs.rmdir() and fs.unlink(). Make use of existsSync() to check if file exists.
+
+Streams and buffers:
