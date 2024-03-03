@@ -21,4 +21,4 @@ Learned about the basics commands in git.
 
 10. **git remote add origin SSH_URL**: Used to link local repo with remote repository on Github
 
-11. **git push -u origin branch_name**: Used to push the current state of local repo into remote repo.
+11. **git push -u origin branch_name**: Used to push the current state of local repo into remote repo. 
