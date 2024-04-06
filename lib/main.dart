@@ -16,10 +16,22 @@ class home extends StatelessWidget {
       centerTitle: true,
       backgroundColor: Colors.green,
     ),
-    body: Container(
-      child: Image(
-        image: NetworkImage('https://images.unsplash.com/photo-1711834232122-d33111024a7b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'),
-      ),
+    body: Row(
+      children: <Widget>[
+        Text('Apple pie'),
+        TextButton(
+            onPressed: () {},
+            child: Text('Play around'),
+          style: ButtonStyle(
+            backgroundColor : MaterialStateProperty.all(Colors.yellow),
+          ),
+        ),
+        Container(
+          color: Colors.brown,
+          padding: EdgeInsets.all(20.0),
+          child: Text('intel inside'),
+        ),
+      ],
     ),
   floatingActionButton: FloatingActionButton(
       onPressed: () {print('I liked it');},
