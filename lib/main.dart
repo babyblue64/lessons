@@ -16,20 +16,32 @@ class home extends StatelessWidget {
       centerTitle: true,
       backgroundColor: Colors.green,
     ),
-    body: Row(
+    body: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        Text('Apple pie'),
-        TextButton(
-            onPressed: () {},
-            child: Text('Play around'),
-          style: ButtonStyle(
-            backgroundColor : MaterialStateProperty.all(Colors.yellow),
-          ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: <Widget>[
+            Text('How are you?'),
+            Text('I will manage the wrong'),
+          ],
         ),
         Container(
-          color: Colors.brown,
+          padding: EdgeInsets.all(30.0),
+          color: Colors.amber,
+          child: Text('one'),
+        ),
+        Container(
+          padding: EdgeInsets.all(10.0),
+          color: Colors.yellow,
+          child: Text('two'),
+        ),
+        Container(
           padding: EdgeInsets.all(20.0),
-          child: Text('intel inside'),
+          color: Colors.green,
+          child: Text('three'),
         ),
       ],
     ),
